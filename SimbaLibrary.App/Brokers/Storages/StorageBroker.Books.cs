@@ -13,8 +13,8 @@ namespace SimbaLibrary.App.Brokers.Storages
             return book;
         }
 
-        public List<Book> GetAllBooks() => books;
-        public Book GetBookById(Guid id) =>
+        public List<Book> SelectAllBooks() => books;
+        public Book SelectBookById(Guid id) =>
             books.Find(book => book.Id == id);
         public Book UpdateBook(Book book)
         {
