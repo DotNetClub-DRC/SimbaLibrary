@@ -10,9 +10,9 @@ namespace SimbaLibrary.App.Tests.Unit.Services.Foundations
     public class BookServiceTests
     {
         private readonly Mock<IStorageBroker> _storageBrokerMock;
-        private BookService _bookService;
+        private readonly IBookService _bookService;
 
-        public BookServiceTests(Mock<IStorageBroker> storageBrokerMock, BookService bookService)
+        public BookServiceTests()
         {
             _storageBrokerMock = new Mock<IStorageBroker>();
             _bookService = new BookService(storageBroker: _storageBrokerMock.Object);

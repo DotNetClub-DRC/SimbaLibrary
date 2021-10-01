@@ -11,7 +11,10 @@ namespace SimbaLibrary.App.Services.Foundations.Books
             this.storageBroker = storageBroker;
         public Book AddBook(Book book)
         {
-            throw new NotImplementedException();
+            Book storageBook = 
+                this.storageBroker.InsertBook(book);
+
+            return storageBook;
         }
     }
 }
