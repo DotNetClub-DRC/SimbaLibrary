@@ -5,5 +5,6 @@ namespace SimbaLibrary.App.Services.Foundations.Books
     public interface IBookService
     {
         public Book AddBook(Book book);
+        public Book RetrieveBookById(Guid id);
     }
 }

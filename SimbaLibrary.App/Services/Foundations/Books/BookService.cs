@@ -16,5 +16,10 @@ namespace SimbaLibrary.App.Services.Foundations.Books
 
             return storageBook;
         }
+
+        public Book RetrieveBookById(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
