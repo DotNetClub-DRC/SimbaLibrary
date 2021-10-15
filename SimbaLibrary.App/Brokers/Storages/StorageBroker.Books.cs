@@ -26,7 +26,7 @@ namespace SimbaLibrary.App.Brokers.Storages
 
         public Book DeleteBook(Book book)
         {
-            books.RemoveAll(book => book.Id == book.Id);
+            books.Remove(book);
 
             return book;
         }
